@@ -1,0 +1,98 @@
+:root {
+	--electric-blue: #7ef9ff;
+	--light-cornflower-blue: #89cff0;
+	--cool-blue: #4682b4;
+	--medium-teal-blue: #0f52ba;
+	--navy-blue: #000080;
+}
+
+.container {
+	display: flex;
+}
+
+.electric-blue {
+	background: var(--electric-blue);
+	animation: electric-blue-pulse 2s infinite linear;
+	animation-delay: 0ms;
+}
+
+.light-cornflower-blue {
+	background: var(--light-cornflower-blue);
+	animation: light-cornflower-blue-pulse 2s infinite linear;
+	animation-delay: 200ms;
+}
+
+.cool-blue {
+	background: var(--cool-blue);
+	animation: cool-blue-pulse 2s infinite linear;
+	animation-delay: 400ms;
+}
+
+.medium-teal-blue {
+	background: var(--medium-teal-blue);
+	animation: medium-teal-blue-pulse 2s infinite linear 600ms;
+	animation-delay: 600ms;
+
+}
+
+.navy-blue {
+	background: var(--navy-blue);
+	animation: navy-blue-pulse 2s infinite linear;
+	animation-delay: 800ms;
+}
+
+.ball {
+	border-radius: 50%;
+	margin: 5px;
+	height: 20px;
+	width: 20px;
+}
+
+@keyframes electric-blue-pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(126,249,255,	0.3);
+	}
+
+	100% {
+		box-shadow: 0 0 0 10px rgba(126,249,255,	0.3);
+	}
+}
+
+@keyframes light-cornflower-blue-pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(137, 207, 240,	0.3);
+	}
+
+	100% {
+		box-shadow: 0 0 0 10px rgba(137, 207, 240,	0.3);
+	}
+}
+
+@keyframes cool-blue-pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(70, 130, 180,	0.3);
+	}
+
+	100% {
+		box-shadow: 0 0 0 10px rgba(70, 130, 180,	0.3);
+	}
+}
+
+@keyframes medium-teal-blue-pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(15, 82, 186,	0.3);
+	}
+
+	100% {
+		box-shadow: 0 0 0 10px rgba(15, 82, 186,	0.3);
+	}
+}
+
+@keyframes navy-blue-pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 128,	0.3);
+	}
+	100% {
+		box-shadow: 0 0 0 10px rgba(0, 0, 128,	0.3);
+	}
+}
